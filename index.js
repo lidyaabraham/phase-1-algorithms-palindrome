@@ -1,5 +1,13 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  // Using if ...else
+  const palindrome1= word.split("").reverse().join("");
+  if(word === palindrome1){
+    return true
+  }else{
+    return false
+  }
+
 }
 
 /* 
@@ -17,9 +25,7 @@ if (require.main === module) {
   console.log("=>", isPalindrome("racecar"));
 
   console.log("");
-
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
 }
-
 module.exports = isPalindrome;
